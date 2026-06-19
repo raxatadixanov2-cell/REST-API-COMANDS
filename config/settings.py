@@ -47,6 +47,12 @@ INSTALLED_APPS = [
     'oqiwshi',
     'hammesi',
     'rest_framework'
+    'apex',
+    'echo',
+    'flux',
+    'nova',
+    'spark',
+    
 ]
 
 MIDDLEWARE = [

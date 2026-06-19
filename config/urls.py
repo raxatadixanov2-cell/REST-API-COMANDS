@@ -23,5 +23,10 @@ urlpatterns = [
     path('paydalaniwshi/', include('paydalaniwshi.urls')),
     path('student/', include('student.urls')),
     path('oqiwshi/', include('oqiwshi.urls')),
-    path('hammesi/', include('hammesi.urls'))
+    path('hammesi/', include('hammesi.urls')),
+    path('apex/', include('apex.urls')),
+    path('echo/', include('echo.urls')),
+    path('flux/', include('flux.urls')),
+    path('nova/', include('nova.urls')),
+    path('spark/', include('spark.urls')),
 ]
