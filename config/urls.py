@@ -25,8 +25,9 @@ urlpatterns = [
     path('oqiwshi/', include('oqiwshi.urls')),
     path('hammesi/', include('hammesi.urls')),
     path('user1/', include('user1.urls')),
-    path('user2/', include('user2.urls'))
-    path('user3/', include('user3.urls'))
-    path('user4/', include('user4.urls'))
+    path('user2/', include('user2.urls')),
+    path('user3/', include('user3.urls')),
+    path('user4/', include('user4.urls')),
+    path('user5/', include('user5.urls'))
     
 ]
