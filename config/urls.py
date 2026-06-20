@@ -28,6 +28,10 @@ urlpatterns = [
     path('user2/', include('user2.urls')),
     path('user3/', include('user3.urls')),
     path('user4/', include('user4.urls')),
-    path('user5/', include('user5.urls'))
-    
+    path('user5/', include('user5.urls')),
+    path('apex/', include('apex.urls')),
+    path('echo/', include('echo.urls')),
+    path('flux/', include('flux.urls')),
+    path('nova/', include('nova.urls')),
+    path('spark/', include('spark.urls')),
 ]

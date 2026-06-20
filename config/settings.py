@@ -51,7 +51,12 @@ INSTALLED_APPS = [
     'user2',
     'user3',
     'user4',
-    'user5'
+    'user5',
+    'apex',
+    'echo',
+    'flux',
+    'nova',
+    'spark',
 ]
 
 MIDDLEWARE = [
