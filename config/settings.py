@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 import os
 load_dotenv()
 
@@ -46,13 +46,17 @@ INSTALLED_APPS = [
     'student',
     'oqiwshi',
     'hammesi',
-    'rest_framework'
+    'rest_framework',
+    'user1',
+    'user2',
+    'user3',
+    'user4',
+    'user5',
     'apex',
     'echo',
     'flux',
     'nova',
     'spark',
-    
 ]
 
 MIDDLEWARE = [
@@ -66,6 +70,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'config.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.simplejwt.authentication.JWTAuthentication ',
+}
 
 TEMPLATES = [
     {
@@ -90,12 +98,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('ENGINE'),
-        'NAME': os.getenv('NAME'),
-        'USER': os.getenv('USER'),
-        'PASSWORD': os.getenv('PASSWORD'),
-        'HOST': os.getenv('HOST'),
-        'PORT': os.getenv('PORT')
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': ('cars'),
+        'USER': os.getenv('postgres'),
+        'PASSWORD': ('xx63blk'),
+        'HOST': os.getenv('localhost'),
+        'PORT': os.getenv('5432')
     }
 }
 
